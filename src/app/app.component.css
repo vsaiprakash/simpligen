@@ -1,0 +1,11 @@
+.body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-title {
+    height: 100%;
+    padding-bottom: 50px;
+}

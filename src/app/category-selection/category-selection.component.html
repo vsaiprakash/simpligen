@@ -1,0 +1,13 @@
+<div class="category-group" *ngFor="let category of categoriesList">
+    <div>
+        <select class="form-select form-select-sm category-select" aria-label="select">
+            <option selected>Select {{ category.categoryName }}</option>
+            <!-- ng-container used instead of div -->
+            <ng-container *ngFor="let item of category.categoryItems">
+                <option value={{item}}>
+                    {{item}}
+                </option>
+            </ng-container>
+        </select>
+    </div>
+</div>
